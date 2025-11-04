@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About 18 Magazine - Learn about our story, mission, and creative team.">
+  <meta name="author" content="18 Magazine Team">
+  <title>About Us | 18 Magazine</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- ===== HEADER / NAV ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="logo">18 <span>Magazine</span></h1>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== ABOUT HERO ===== -->
+  <section class="hero about-hero">
+    <div class="container">
+      <h2>Our Story</h2>
+      <p>Bold, creative, and culture-driven — 18 Magazine was built for those who crave originality and inspiration.</p>
+    </div>
+  </section>
+
+  <!-- ===== OUR MISSION ===== -->
+  <main class="container about-page">
+    <section class="mission">
+      <h2 class="section-title">Our Mission</h2>
+      <p>At <strong>18 Magazine</strong>, our mission is to bridge the gap between modern creativity and timeless storytelling.  
+      We celebrate individuality, diversity, and the art of expression through engaging content, stunning visuals, and authentic voices from around the world.</p>
+
+      <p>We aim to redefine what a magazine can be — a platform for conversation, discovery, and empowerment. Whether it's fashion, film, music, or lifestyle, our goal is to inspire and inform our readers with every page.</p>
+    </section>
+
+    <!-- ===== OUR HISTORY ===== -->
+    <section class="history">
+      <h2 class="section-title">Our Journey</h2>
+      <div class="grid-2">
+        <div>
+          <p>Founded in 2020 in New York City, <strong>18 Magazine</strong> began as a small digital publication highlighting independent artists and underground trends.  
+          Over the years, we’ve grown into a global creative hub reaching millions of readers across multiple platforms.</p>
+
+          <p>Our editorial philosophy remains the same — authenticity, creativity, and curiosity drive everything we do.  
+          We’ve partnered with international designers, filmmakers, and thought leaders to deliver bold, visually rich content that matters.</p>
+        </div>
+        <div>
+          <img src="../assets/img/about-history.jpg" alt="18 Magazine history" class="about-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OUR TEAM ===== -->
+    <section class="team">
+      <h2 class="section-title">Meet the Team</h2>
+      <div class="grid-3">
+        <article class="card">
+          <img src="../assets/img/team1.jpg" alt="Editor-in-Chief">
+          <h3>Emma Carter</h3>
+          <p><em>Editor-in-Chief</em></p>
+          <p>Emma leads the editorial team with a passion for visual storytelling and contemporary journalism. She believes every issue should challenge and inspire.</p>
+        </article>
+
+        <article class="card">
+          <img src="../assets/img/team2.jpg" alt="Creative Director">
+          <h3>Julian Moore</h3>
+          <p><em>Creative Director</em></p>
+          <p>Julian curates the magazine’s visual identity, ensuring that every feature is bold, expressive, and artfully crafted for today’s audience.</p>
+        </article>
+
+        <article class="card">
+          <img src="../assets/img/team3.jpg" alt="Digital Strategist">
+          <h3>Isabella Nguyen</h3>
+          <p><em>Digital Strategist</em></p>
+          <p>Isabella oversees our digital growth and innovation, combining storytelling with technology to expand 18 Magazine’s global reach.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== CALL TO ACTION ===== -->
+    <section class="cta">
+      <div class="cta-content">
+        <h2>Join Our Creative Community</h2>
+        <p>Be part of the movement — subscribe to our newsletter or collaborate with our editorial team.</p>
+        <a href="contact.html" class="btn">Get in Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> 18 Magazine. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="../privacy.html">Privacy Policy</a> |
+        <a href="../terms.html">Terms & Conditions</a> |
+        <a href="../sitemap.html">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JS ===== -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script>
+  // Show modal on page load or trigger
+  window.addEventListener("load", () => {
+    const modal = document.getElementById("redirectModal");
+    modal.style.display = "flex"; // Show popup
+  });
+
+  // Buttons
+  const continueBtn = document.getElementById("continueBtn");
+  const cancelBtn = document.getElementById("cancelBtn");
+  const modal = document.getElementById("redirectModal");
+
+  // Redirect to another page
+  continueBtn.addEventListener("click", () => {
+    window.location.href = "pages/about.html"; // Change link as needed
+  });
+
+  // Close modal or redirect elsewhere
+  cancelBtn.addEventListener("click", () => {
+    modal.style.display = "none"; // Just closes it
+    // or redirect user elsewhere:
+    // window.location.href = "https://www.google.com";
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+# robots.txt for 18 Magazine
+# Last updated: November 3, 2025
+
+User-agent: *
+# Allow main pages
+Allow: /index.html
+Allow: /privacy.html
+Allow: /terms.html
+Allow: /sitemap.html
+Allow: /pages/
+Allow: /posts/
+
+# Disallow system or private files
+Disallow: /assets/
+Disallow: /drafts/
+Disallow: /tmp/
+Disallow: /config/
+
+# Sitemap location (update URL when live)
+Sitemap: https://www.18magazine.com/sitemap.html
+
+# Crawl-delay helps prevent server overload (in seconds)
+Crawl-delay: 5
