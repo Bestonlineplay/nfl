@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="18 Magazine - Top magazine with full content and exclusive features.">
+  <meta name="author" content="18 Magazine Team">
+  <title>18 Magazine | Top Magazine with Full Content</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== JS FOR MODAL ===== -->
+<script>
+  // Show modal on page load or trigger
+  window.addEventListener("load", () => {
+    const modal = document.getElementById("redirectModal");
+    modal.style.display = "flex"; // Show popup
+  });
+
+  // Buttons
+  const continueBtn = document.getElementById("continueBtn");
+  const cancelBtn = document.getElementById("cancelBtn");
+  const modal = document.getElementById("redirectModal");
+
+  // Redirect to another page
+  continueBtn.addEventListener("click", () => {
+    window.location.href = "pages/about.html"; // Change link as needed
+  });
+
+  // Close modal or redirect elsewhere
+  cancelBtn.addEventListener("click", () => {
+    modal.style.display = "none"; // Just closes it
+    // or redirect user elsewhere:
+    // window.location.href = "https://www.google.com";
+  });
+</script>
+
+</body>
+</html>
